@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.Toolbar
+
+            android:background="@color/purple_200"
+            style="@style/ThemeOverlay.AppCompat.Dark"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:inputType="text"
+                android:imeOptions="actionSearch"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_baseline_search_24"
+                android:hint="Nhập tên tìm kiếm"
+                android:id="@+id/editTimkiem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </androidx.appcompat.widget.Toolbar>
+        <androidx.cardview.widget.CardView
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:padding="5dp"
+            android:textSize="18sp"
+            android:layout_margin="10dp"
+            android:text="Danh Sách Bài Hát"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/recycleDSBH"
+            android:layout_margin="10dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="320dp"
+        app:menu="@menu/menu_user"
+        app:itemIconTint="@color/purple_200"
+        app:itemTextColor="@color/purple_200"
+        android:layout_gravity="start"
+        android:visibility="gone"
+        android:id="@+id/navigationview"
+        android:layout_height="match_parent"/>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

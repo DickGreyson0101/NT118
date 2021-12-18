@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="250dp"
+    android:layout_margin="10dp"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="10dp"
+    android:layout_height="200dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+       <ImageView
+           android:id="@+id/cancel"
+           android:src="@android:drawable/ic_menu_close_clear_cancel"
+           android:layout_gravity="end"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+        <Button
+            android:layout_marginTop="30dp"
+            android:textColor="@android:color/background_light"
+            android:id="@+id/btndangnhap"
+            android:text="Đăng Nhập"
+            android:background="@drawable/custom_button"
+            android:layout_gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="50dp"/>
+        <Button
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/background_light"
+            android:id="@+id/btndangky"
+            android:text="Đăng Ký"
+            android:background="@drawable/custom_button"
+            android:layout_gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="50dp"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">zingmucsicplayer</string>
+    <string name="app_name">Music Relax Player</string>
+    <string name="dangky">Nếu bạn chưa có tài khoản ? Đăng Ký</string>
+    <string name="dangnhap">Tôi đã có tài khoản . Đăng Nhập</string>
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
 </resources>

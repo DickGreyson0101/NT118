@@ -18,7 +18,7 @@
 <a name="gioithieumonhoc"></a>
 * **Tên môn học**: Phát triển ứng dụng trên thiết bị di động
 * **Mã môn học**: NT118
-* **Lớp học**: Nt118.M11
+* **Lớp học**: NT118.M11
 * **Ngày bắt đầu**: 
 * **Năm học**: 2021
 

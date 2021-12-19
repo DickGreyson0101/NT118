@@ -6,7 +6,7 @@ import android.os.Handler;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-//import com.zingmucsicrelax.zingmucsicplayer.View.HomeActivity;
+import com.zingmucsicrelax.zingmucsicplayer.View.HomeActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
       new Handler().postDelayed(new Runnable() {
           @Override
           public void run() {
-              //startActivity(new Intent( MainActivity.this, HomeActivity.class));
+              startActivity(new Intent( MainActivity.this, HomeActivity.class));
           }
       },2500);
     }

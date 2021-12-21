@@ -3,6 +3,7 @@ package com.zingmucsicrelax.zingmucsicplayer.View;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,14 +11,17 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.zingmucsicrelax.zingmucsicplayer.Adapter.DanhSachBaiHatAdapter;
+import com.zingmucsicrelax.zingmucsicplayer.Adapter.DanhSachBaiHatPlayListAdapter;
 import com.zingmucsicrelax.zingmucsicplayer.Adapter.DanhSachSearchBaiHatAdapter;
 import com.zingmucsicrelax.zingmucsicplayer.Controller.BaiHatController;
 import com.zingmucsicrelax.zingmucsicplayer.Model.BaiHat;
+import com.zingmucsicrelax.zingmucsicplayer.Model.Playlist;
 import com.zingmucsicrelax.zingmucsicplayer.R;
 
 import java.util.ArrayList;
 
-public class SearchActivity extends AppCompatActivity {
+public class SearchActivity  extends AppCompatActivity {
     private Toolbar toolbar;
     private RecyclerView lv;
     private DanhSachSearchBaiHatAdapter adapter;

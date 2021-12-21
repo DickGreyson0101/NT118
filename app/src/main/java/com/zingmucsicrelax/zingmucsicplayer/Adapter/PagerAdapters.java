@@ -14,7 +14,7 @@ import com.zingmucsicrelax.zingmucsicplayer.R;
 
 import java.util.ArrayList;
 
-public class PagerAdapters extends PagerAdapter {
+public class PagerAdapters  extends PagerAdapter {
     private Context context;
     private ArrayList<String> arrayList;
 

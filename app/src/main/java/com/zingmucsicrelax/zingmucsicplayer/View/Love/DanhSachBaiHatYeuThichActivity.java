@@ -4,6 +4,7 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -21,8 +22,9 @@ import com.zingmucsicrelax.zingmucsicplayer.R;
 import com.zingmucsicrelax.zingmucsicplayer.ShareConfig;
 
 import java.util.ArrayList;
+import java.util.List;
 
-public class DanhSachBaiHatYeuThichActivity extends AppCompatActivity {
+public class DanhSachBaiHatYeuThichActivity  extends AppCompatActivity {
     private Toolbar toolbar;
     private RecyclerView lv;
     private DanhSachBaiHatYeuThichAdapter adapter;

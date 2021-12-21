@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -31,13 +32,13 @@ public class DanhSachBaiHatYeuThichAdapter extends RecyclerView.Adapter<DanhSach
 
     @NonNull
     @Override
-    public ViewHodler onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public DanhSachBaiHatYeuThichAdapter.ViewHodler onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(context).inflate(R.layout.dong_baihat_yeuthich,parent,false);
         return new ViewHodler(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHodler holder, int position) {
+    public void onBindViewHolder(@NonNull DanhSachBaiHatYeuThichAdapter.ViewHodler holder, int position) {
 
         Picasso.with(context).load(arrayList.get(position).getHinhanh()).into(holder.hinhanh);
         holder.txttencasi.setText(arrayList.get(position).getTencasi());

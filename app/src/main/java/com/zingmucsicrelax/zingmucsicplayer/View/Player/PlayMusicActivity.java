@@ -16,9 +16,11 @@ import com.zingmucsicrelax.zingmucsicplayer.R;
 import com.zingmucsicrelax.zingmucsicplayer.View.FragMent.FragMent_Lyrics;
 import com.zingmucsicrelax.zingmucsicplayer.View.FragMent.FragMent_Player;
 
+import java.io.IOException;
+
 import me.relex.circleindicator.CircleIndicator;
 
-public class PlayMusicActivity extends AppCompatActivity {
+public class PlayMusicActivity  extends AppCompatActivity {
     public static BaiHat baiHat;
     private Intent intent;
     private MediaPlayer mediaPlayer;

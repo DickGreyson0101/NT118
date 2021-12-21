@@ -11,6 +11,7 @@ import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -18,15 +19,18 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.navigation.NavigationView;
 import com.zingmucsicrelax.zingmucsicplayer.Adapter.DanhSachBaiHatAdapter;
+import com.zingmucsicrelax.zingmucsicplayer.Adapter.DanhSachBaiHatMoiAdapter;
 import com.zingmucsicrelax.zingmucsicplayer.Adapter.PagerAdapters;
 import com.zingmucsicrelax.zingmucsicplayer.Controller.BaiHatController;
 import com.zingmucsicrelax.zingmucsicplayer.Model.BaiHat;
@@ -39,14 +43,14 @@ import com.zingmucsicrelax.zingmucsicplayer.View.PlayList.DanhSachPlayListActivi
 
 import java.util.ArrayList;
 
-public class HomeActivity extends AppCompatActivity {
+public class HomeActivity  extends AppCompatActivity {
     private ViewPager viewPager;
     private BaiHatController baiHatController;
     private PagerAdapters pagerAdapter;
     private  int k = 0;
     private DanhSachBaiHatAdapter danhSachBaiHatAdapter;
-    private  ArrayList<BaiHat> arrayList_BH;
-    private RecyclerView rcvDSBH;
+    private  ArrayList<BaiHat> arrayList_BH, arrayList_BHM;
+    private RecyclerView rcvDSBH, rcvDSBHM;
     private NavigationView navigationView;
     private Toolbar toolbar;
     private DrawerLayout drawerLayout;
@@ -68,6 +72,12 @@ public class HomeActivity extends AppCompatActivity {
         DanhSachBaiHatAdapter danhSachBaiHatAdapter = new DanhSachBaiHatAdapter(arrayList_BH,this);
         rcvDSBH.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false));
         rcvDSBH.setAdapter(danhSachBaiHatAdapter);
+
+        arrayList_BHM  = baiHatController.getDataBaihatmoi();
+        DanhSachBaiHatMoiAdapter danhSachBaiHatMoiAdapter = new DanhSachBaiHatMoiAdapter(arrayList_BHM,this);
+        rcvDSBHM.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false));
+        rcvDSBHM.setAdapter(danhSachBaiHatMoiAdapter);
+
         ShareConfig shareConfig = new ShareConfig(this);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Home");
@@ -80,7 +90,7 @@ public class HomeActivity extends AppCompatActivity {
         if(shareConfig.getUserID()>0){
             toolbar.setVisibility(View.VISIBLE);
             navigationView.setVisibility(View.VISIBLE);
-            ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar, R.string.Open,
+            ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.Open,
                     R.string.Close);
             toggle.syncState();
         }else{
@@ -184,6 +194,7 @@ public class HomeActivity extends AppCompatActivity {
     private void InitWidget() {
         viewPager = findViewById(R.id.viewpager);
         rcvDSBH  = findViewById(R.id.recycleDSBH);
+        rcvDSBHM  = findViewById(R.id.recycleDSBHM);
         navigationView = findViewById(R.id.navigationview);
         drawerLayout = findViewById(R.id.drawerlayout);
         toolbar = findViewById(R.id.toolbar);
@@ -203,5 +214,10 @@ public class HomeActivity extends AppCompatActivity {
         DanhSachBaiHatAdapter danhSachBaiHatAdapter = new DanhSachBaiHatAdapter(arrayList_BH,this);
         rcvDSBH.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false));
         rcvDSBH.setAdapter(danhSachBaiHatAdapter);
+
+        arrayList_BHM  = baiHatController.getDataBaihatmoi();
+        DanhSachBaiHatMoiAdapter danhSachBaiHatMoiAdapter = new DanhSachBaiHatMoiAdapter(arrayList_BHM,this);
+        rcvDSBHM.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false));
+        rcvDSBHM.setAdapter(danhSachBaiHatMoiAdapter);
     }
 }

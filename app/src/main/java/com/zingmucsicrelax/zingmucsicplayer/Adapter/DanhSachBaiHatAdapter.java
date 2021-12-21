@@ -30,13 +30,13 @@ public class DanhSachBaiHatAdapter  extends RecyclerView.Adapter<DanhSachBaiHatA
 
     @NonNull
     @Override
-    public ViewHodler onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public DanhSachBaiHatAdapter.ViewHodler onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(context).inflate(R.layout.dong_baihat,parent,false);
         return new ViewHodler(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHodler holder, int position) {
+    public void onBindViewHolder(@NonNull DanhSachBaiHatAdapter.ViewHodler holder, int position) {
 
         Picasso.with(context).load(arrayList.get(position).getHinhanh()).into(holder.hinhanh);
         holder.txttencasi.setText(arrayList.get(position).getTencasi());

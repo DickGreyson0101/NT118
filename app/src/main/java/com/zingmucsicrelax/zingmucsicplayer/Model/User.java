@@ -20,7 +20,7 @@ public class User {
     private  String pass;
     private Context context;
     private Connection connection;
-    public User(Context context){
+    public  User(Context context){
         this.context= context;
         connection = DB.getConnection();
 

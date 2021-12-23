@@ -1,6 +1,7 @@
 package com.zingmucsicrelax.zingmucsicplayer.View.FragMent;
 
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,6 +23,7 @@ public class FragMent_Lyrics extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_lyrics,container,false);
          txtlyrics= view.findViewById(R.id.txtlyrics);
+         txtlyrics.setMovementMethod(new ScrollingMovementMethod());
          txtlyrics.setText(PlayMusicActivity.baiHat.getLoibaihat());
         return  view;
     }

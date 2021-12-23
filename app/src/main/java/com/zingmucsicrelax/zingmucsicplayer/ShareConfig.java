@@ -10,12 +10,10 @@ public class ShareConfig {
         sharedPreferences= context.getSharedPreferences("INFO",Context.MODE_PRIVATE);
         editor = sharedPreferences.edit();
     }
-    //Hàm lưu id người dùng
     public  void PutUserID(int userId){
         editor.putInt("ID",userId);
         editor.commit();
     }
-    //Hàm lấy id người dùng
     public  int getUserID(){
         return  sharedPreferences.getInt("ID",0);
     }

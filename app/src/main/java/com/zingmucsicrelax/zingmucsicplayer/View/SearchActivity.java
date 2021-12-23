@@ -30,7 +30,7 @@ public class SearchActivity  extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.acvitiy_search); // set view
+        setContentView(R.layout.acvitiy_search);
         lv=findViewById(R.id.lv);
         toolbar=findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -38,9 +38,9 @@ public class SearchActivity  extends AppCompatActivity {
         String name= intent.getStringExtra("KEY");
         baiHatController =new BaiHatController();
 
-        arrayList = baiHatController.getDataListByHatSearch(name);//Lấy danh sách bài hát theo key
+        arrayList = baiHatController.getDataListByHatSearch(name);
 
-        adapter = new DanhSachSearchBaiHatAdapter(arrayList,this); //Đưa vào adapter để hiển thị ra view
+        adapter = new DanhSachSearchBaiHatAdapter(arrayList,this);
         lv.setLayoutManager(new LinearLayoutManager(this));
         lv.setAdapter(adapter);
 
@@ -51,7 +51,7 @@ public class SearchActivity  extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 finish();
-            } //Nút Back
+            }
         });
     }
 }

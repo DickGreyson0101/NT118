@@ -48,12 +48,12 @@
         "source": "D:\\Android\\DoAn\\app\\src\\main\\res\\drawable\\transparent.jpg"
     },
     {
-        "merged": "D:\\Android\\DoAn\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "D:\\Android\\DoAn\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
-    },
-    {
         "merged": "D:\\Android\\DoAn\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "D:\\Android\\DoAn\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "D:\\Android\\DoAn\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "D:\\Android\\DoAn\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
         "merged": "D:\\Android\\DoAn\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_dangnhap.xml.flat",

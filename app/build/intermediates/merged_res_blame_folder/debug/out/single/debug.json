@@ -104,6 +104,10 @@
         "source": "D:\\Android\\DoAn\\app\\src\\main\\res\\drawable\\ic_baseline_loop_24.xml"
     },
     {
+        "merged": "D:\\Android\\DoAn\\app\\build\\intermediates\\merged_res\\debug\\font_font_lyric.xml.flat",
+        "source": "D:\\Android\\DoAn\\app\\src\\main\\res\\font\\font_lyric.xml"
+    },
+    {
         "merged": "D:\\Android\\DoAn\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_search_24.xml.flat",
         "source": "D:\\Android\\DoAn\\app\\src\\main\\res\\drawable\\ic_baseline_search_24.xml"
     },

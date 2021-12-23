@@ -57,7 +57,7 @@ public BaiHat(int id, int id_playlist, String tenbaihat, String hinhanh, String 
     public ArrayList<BaiHat> getDataListBaiHat(){
 
         ArrayList<BaiHat> arrayList = new ArrayList<>();
-        String SQL="SELECT * FROM baihat";
+        String SQL="SELECT * FROM baihat order by tenbaihat";
         try {
             Statement sm = connection.createStatement();
             ResultSet rs = sm.executeQuery(SQL);

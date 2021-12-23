@@ -102,7 +102,29 @@ public BaiHat(int id, int id_playlist, String tenbaihat, String hinhanh, String 
         return  arrayList;
 
     }
+    public ArrayList<BaiHat> getDataBaihatmoi(){
 
+        ArrayList<BaiHat> arrayList = new ArrayList<>();
+        String SQL="SELECT * FROM baihat ORDER BY ngaythem DESC limit 5";
+        try {
+            Statement sm = connection.createStatement();
+            ResultSet rs = sm.executeQuery(SQL);
+            while (rs.next()){
+                arrayList.add(new BaiHat(rs.getInt("id"),rs.getString("tenbaihat"),
+                        rs.getString("hinhanh"),
+                        rs.getString("tencasi"),
+                        rs.getString("url_baihat"),
+                        rs.getInt("id_theloai"),
+                        rs.getString("loibaihat")));
+            }
+        } catch (SQLException throwables) {
+            Log.d("CHECKED",throwables.getMessage());
+        }
+
+
+        return  arrayList;
+
+    }
     public ArrayList<String> getDataListBanner(){
 
         ArrayList<String> arrayList = new ArrayList<>();
@@ -121,22 +143,21 @@ public BaiHat(int id, int id_playlist, String tenbaihat, String hinhanh, String 
         return  arrayList;
 
     }
-    public String gettentheloai(int id_theloai)
-    {
-        ArrayList<String> arrayList = new ArrayList<>();
+    public  String gettentheloai(int idtheloai){
+        String SQL="SELECT * FROM theloai WHERE id = '"+idtheloai+"'";
+        Statement sm = null;
         String tentheloai = "";
-        String SQL="SELECT * FROM THELOAI WHERE THELOAI.ID = "+id_theloai;
         try {
-            Statement sm = connection.createStatement();
+            sm = connection.createStatement();
             ResultSet rs = sm.executeQuery(SQL);
             while (rs.next()){
                 tentheloai = rs.getString("tentheloai");
             }
         } catch (SQLException throwables) {
-            Log.d("CHECKED",throwables.getMessage());
-        }
-        return tentheloai;
 
+        }
+
+        return  tentheloai;
     }
 
     public int getId() {

@@ -3,6 +3,8 @@ package com.zingmucsicrelax.zingmucsicplayer.DAO;
 import android.os.StrictMode;
 import android.util.Log;
 
+import org.gjt.mm.mysql.Driver;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -11,9 +13,9 @@ public class DB {
 
     public  static Connection getConnection(){
        Connection connection =null;
-       String Url="jdbc:mysql://192.168.1.20/ZingMusicPlayer";
+       String Url="jdbc:mysql://192.168.1.8/ZingMusicPlayer";
        String username="root";
-       String password="123456";
+       String password="123456789";
 
         StrictMode.ThreadPolicy threadPolicy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
 

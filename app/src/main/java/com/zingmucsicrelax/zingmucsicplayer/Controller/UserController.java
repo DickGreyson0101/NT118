@@ -4,13 +4,14 @@ import android.content.Context;
 
 import com.zingmucsicrelax.zingmucsicplayer.Model.Playlist;
 import com.zingmucsicrelax.zingmucsicplayer.Model.User;
+import com.zingmucsicrelax.zingmucsicplayer.ShareConfig;
 
 public class UserController {
     private User user;
     private  Context context;
     private Playlist playlist;
 
-    public UserController(Context context){
+    public  UserController(Context context){
         this.context= context;
         user =new User(context);
         playlist = new Playlist(context);

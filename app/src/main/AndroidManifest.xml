@@ -1,14 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.zingmucsicrelax.zingmucsicplayer">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
 
     <application
+
+        android:usesCleartextTraffic="true"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Zingmucsicplayer">
+        android:theme="@style/Theme.ZingMucSicPlayer">
+       <activity android:name=".View.PlayList.DanhSachPlayListActivity"
+           android:screenOrientation="portrait"/>
+        <activity android:name=".View.HomeActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".View.Player.PlayMusicActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".View.Account.DangNhapActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".View.Account.DangKyActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".View.Love.DanhSachBaiHatYeuThichActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".View.PlayList.DanhSachBaiHatPlayListActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".View.SearchActivity"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">

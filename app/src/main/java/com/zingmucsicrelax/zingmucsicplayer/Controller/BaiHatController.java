@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class BaiHatController {
     private BaiHat baiHat;
 
-    public BaiHatController(){
+    public  BaiHatController(){
         baiHat = new BaiHat();
     }
     public ArrayList<BaiHat> getDataListBH(){
@@ -20,7 +20,7 @@ public class BaiHatController {
     public  ArrayList<BaiHat> getDataListBaiHatYeuThich(int iduser){
         return  baiHat.getDataListBaiHatYeuThich(iduser);
     }
-
+    public ArrayList<BaiHat> getDataBaihatmoi(){return baiHat.getDataBaihatmoi();}
     public void XoaYeuThich(int id) {
         baiHat.XoaYeuThichBH(id);
     }
@@ -42,4 +42,5 @@ public class BaiHatController {
     public ArrayList<BaiHat> getDataListByHatSearch(String name) {
         return  baiHat.getDataListBaiHatSearch(name);
     }
+
 }

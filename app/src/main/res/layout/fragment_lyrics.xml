@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:background="@android:color/transparent"
     android:layout_width="match_parent"
@@ -9,10 +9,11 @@
         android:textColor="@android:color/background_light"
         android:elevation="5dp"
         android:justificationMode="inter_word"
-        android:textSize="14sp"
+        android:scrollHorizontally="true"
+        android:textSize="34sp"
         android:id="@+id/txtlyrics"
         android:padding="5dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
-</LinearLayout>
+</ScrollView>

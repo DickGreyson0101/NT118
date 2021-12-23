@@ -67,19 +67,19 @@ public class HomeActivity  extends AppCompatActivity {
     }
 
     private void Init() {
-        Banner();
-        arrayList_BH  = baiHatController.getDataListBH();
-        DanhSachBaiHatAdapter danhSachBaiHatAdapter = new DanhSachBaiHatAdapter(arrayList_BH,this);
+        Banner(); //Hiển thị Banner
+        arrayList_BH  = baiHatController.getDataListBH(); //Lấy danh sách bài hát
+        DanhSachBaiHatAdapter danhSachBaiHatAdapter = new DanhSachBaiHatAdapter(arrayList_BH,this); // Đưa vào adapter để hiển thị ra View
         rcvDSBH.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false));
         rcvDSBH.setAdapter(danhSachBaiHatAdapter);
 
-        arrayList_BHM  = baiHatController.getDataBaihatmoi();
-        DanhSachBaiHatMoiAdapter danhSachBaiHatMoiAdapter = new DanhSachBaiHatMoiAdapter(arrayList_BHM,this);
+        arrayList_BHM  = baiHatController.getDataBaihatmoi();//Lấy danh sách bài hát mới
+        DanhSachBaiHatMoiAdapter danhSachBaiHatMoiAdapter = new DanhSachBaiHatMoiAdapter(arrayList_BHM,this);// Đưa vào adapter để hiển thị ra View
         rcvDSBHM.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false));
         rcvDSBHM.setAdapter(danhSachBaiHatMoiAdapter);
 
-        ShareConfig shareConfig = new ShareConfig(this);
-        setSupportActionBar(toolbar);
+        ShareConfig shareConfig = new ShareConfig(this); //Lấy id người dùng
+        setSupportActionBar(toolbar); // Set toolbar
         getSupportActionBar().setTitle("Home");
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
@@ -87,6 +87,7 @@ public class HomeActivity  extends AppCompatActivity {
                 drawerLayout.openDrawer(Gravity.LEFT);
             }
         });
+        //Set trạng thái hiện ẩn của toolbar
         if(shareConfig.getUserID()>0){
             toolbar.setVisibility(View.VISIBLE);
             navigationView.setVisibility(View.VISIBLE);
@@ -98,6 +99,7 @@ public class HomeActivity  extends AppCompatActivity {
             toolbar.setVisibility(View.GONE);
             navigationView.setVisibility(View.GONE);
         }
+        //Điều hướng navigationview
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -117,7 +119,7 @@ public class HomeActivity  extends AppCompatActivity {
                 return true;
             }
         });
-
+        //Tìm kiến bài hát
         editSearch.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
@@ -137,7 +139,7 @@ public class HomeActivity  extends AppCompatActivity {
 
 
     }
-
+//Hiển thị Dialog đăng nhập/ đăng ký
     private void ShowDiaLog() {
 
         Dialog dialog  = new Dialog(this);
@@ -166,7 +168,7 @@ public class HomeActivity  extends AppCompatActivity {
         });
 
     }
-
+//Hàm điều khiển hiển thị Banner
     private void Banner() {
         baiHatController = new BaiHatController();
         ArrayList<String> arrayList = baiHatController.getDataListBanner();

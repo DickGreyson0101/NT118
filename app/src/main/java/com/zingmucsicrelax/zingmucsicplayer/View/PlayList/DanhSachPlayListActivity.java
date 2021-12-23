@@ -44,6 +44,7 @@ public class DanhSachPlayListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ds_playlist);
         lv=findViewById(R.id.lv);
+        //Hiển thị toolbar
         toolbar=findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Play List");
@@ -52,32 +53,35 @@ public class DanhSachPlayListActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 finish();
-            }
+            } //Nút back
         });
         baiHatController = new BaiHatController();
         UserController userController = new UserController(this);
-        ShareConfig shareConfig = new ShareConfig(this);
-        arrayList = baiHatController.getDataPlayList(shareConfig.getUserID());
+        ShareConfig shareConfig = new ShareConfig(this); // Lấy Id người dùng
+        arrayList = baiHatController.getDataPlayList(shareConfig.getUserID()); //Lấy danh sách playlist theo id
         list_play =new ArrayList<>();
+        //adđ vào arrylist
          for(Playlist p : arrayList){
              list_play.add(p.getTenplaylist());
 
          }
-         arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1,list_play);
+         arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1,list_play); //Đưa vào adapter để hiển thị
 
         lv.setAdapter(arrayAdapter);
+        //Xử lý nút thêm playlist
         findViewById(R.id.add).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
               ShowDiaLogAdd(userController);
             }
         });
+        //Xử lý khi nhấn vào 1 playlist
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if(arrayList.size()>0){
                     Intent intent = new Intent(DanhSachPlayListActivity.this,DanhSachBaiHatPlayListActivity.class);
-                    intent.putExtra("PLAY",arrayList.get(position));
+                    intent.putExtra("PLAY",arrayList.get(position)); //Truyền playlist sang activity mới
                     startActivity(intent);
                 }else{
                     Toast.makeText(DanhSachPlayListActivity.this, "không có bài hát nào trong play list", Toast.LENGTH_SHORT).show();
@@ -85,6 +89,7 @@ public class DanhSachPlayListActivity extends AppCompatActivity {
 
             }
         });
+        //Xử lý xoá playlist
         lv.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
@@ -119,7 +124,7 @@ public class DanhSachPlayListActivity extends AppCompatActivity {
 
 
     }
-
+//Hiển thị Dialog thêm paylist
     private void ShowDiaLogAdd(UserController userController) {
         Dialog dialog = new Dialog(this);
         dialog.setContentView(R.layout.dialog_tao);
@@ -146,7 +151,7 @@ public class DanhSachPlayListActivity extends AppCompatActivity {
             }
         });
     }
-
+//Hiển thị DiaLog Delete
     private void ShowDiaLogDelete(int direction) {
 
         BaiHatController baiHatController = new BaiHatController();

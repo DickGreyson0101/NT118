@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:background="@android:color/transparent"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <TextView
-        android:textColor="@android:color/background_light"
+        android:textColor="@color/white"
         android:elevation="5dp"
         android:justificationMode="inter_word"
-        android:fontFamily="sans-serif-medium"
-        android:scrollHorizontally="true"
-        android:textSize="24sp"
+        android:textSize="20sp"
+        android:scrollbars = "vertical"
         android:id="@+id/txtlyrics"
-        android:padding="5dp"
-
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:padding="3dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
-</ScrollView>
+</LinearLayout>

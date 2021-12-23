@@ -37,24 +37,22 @@ public class DanhSachBaiHatPlayListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ds_bh);
         lv=findViewById(R.id.lv);
-        //Set toolbar
         toolbar=findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         Intent intent= getIntent();
-        //
-        Playlist playlist = (Playlist) intent.getSerializableExtra("PLAY"); //Nhận playlist dc truyền sang
+        Playlist playlist = (Playlist) intent.getSerializableExtra("PLAY");
         getSupportActionBar().setTitle(playlist.getTenplaylist());
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
-            } //Back
+            }
         });
         baiHatController = new BaiHatController();
-        ShareConfig shareConfig = new ShareConfig(this); //Nhận Id
-        arrayList = baiHatController.getDataListBaiHatPlayList(shareConfig.getUserID(),playlist.getId()); //Lấy danh sách phát playlist
-        adapter = new DanhSachBaiHatPlayListAdapter(arrayList,this);// Đưa vào adapter
+        ShareConfig shareConfig = new ShareConfig(this);
+        arrayList = baiHatController.getDataListBaiHatPlayList(shareConfig.getUserID(),playlist.getId());
+        adapter = new DanhSachBaiHatPlayListAdapter(arrayList,this);
         lv.setLayoutManager(new LinearLayoutManager(this));
         lv.setAdapter(adapter);
 
@@ -67,7 +65,7 @@ public class DanhSachBaiHatPlayListActivity extends AppCompatActivity {
 
             @Override
             public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int direction) {
-                ShowDiaLogDelete(viewHolder.getAdapterPosition()); //Xoá bài hát khỏi playlist
+                ShowDiaLogDelete(viewHolder.getAdapterPosition());
 
             }
         };
@@ -77,7 +75,7 @@ public class DanhSachBaiHatPlayListActivity extends AppCompatActivity {
 
 
     }
-//Dialog xác nhận xoá
+
     private void ShowDiaLogDelete(int direction) {
 
         BaiHatController baiHatController = new BaiHatController();

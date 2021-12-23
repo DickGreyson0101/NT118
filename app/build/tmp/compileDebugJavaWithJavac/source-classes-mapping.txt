@@ -1,45 +1,28 @@
-com/zingmucsicrelax/zingmucsicplayer/BuildConfig.java
- com.zingmucsicrelax.zingmucsicplayer.BuildConfig
-com/zingmucsicrelax/zingmucsicplayer/ShareConfig.java
- com.zingmucsicrelax.zingmucsicplayer.ShareConfig
+com/zingmucsicrelax/zingmucsicplayer/Adapter/DanhSachBaiHatAdapter.java
+ com.zingmucsicrelax.zingmucsicplayer.Adapter.DanhSachBaiHatAdapter
+ com.zingmucsicrelax.zingmucsicplayer.Adapter.DanhSachBaiHatAdapter$1
+ com.zingmucsicrelax.zingmucsicplayer.Adapter.DanhSachBaiHatAdapter$ViewHodler
+com/zingmucsicrelax/zingmucsicplayer/Adapter/DanhSachBaiHatPlayListAdapter.java
+ com.zingmucsicrelax.zingmucsicplayer.Adapter.DanhSachBaiHatPlayListAdapter
+ com.zingmucsicrelax.zingmucsicplayer.Adapter.DanhSachBaiHatPlayListAdapter$1
+ com.zingmucsicrelax.zingmucsicplayer.Adapter.DanhSachBaiHatPlayListAdapter$ViewHodler
 com/zingmucsicrelax/zingmucsicplayer/Adapter/ViewPagerAdapter.java
  com.zingmucsicrelax.zingmucsicplayer.Adapter.ViewPagerAdapter
-com/zingmucsicrelax/zingmucsicplayer/Model/BaiHat.java
- com.zingmucsicrelax.zingmucsicplayer.Model.BaiHat
-com/zingmucsicrelax/zingmucsicplayer/View/Love/DanhSachBaiHatYeuThichActivity.java
- com.zingmucsicrelax.zingmucsicplayer.View.Love.DanhSachBaiHatYeuThichActivity
- com.zingmucsicrelax.zingmucsicplayer.View.Love.DanhSachBaiHatYeuThichActivity$1
- com.zingmucsicrelax.zingmucsicplayer.View.Love.DanhSachBaiHatYeuThichActivity$2
- com.zingmucsicrelax.zingmucsicplayer.View.Love.DanhSachBaiHatYeuThichActivity$3
- com.zingmucsicrelax.zingmucsicplayer.View.Love.DanhSachBaiHatYeuThichActivity$4
-com/zingmucsicrelax/zingmucsicplayer/Controller/UserController.java
- com.zingmucsicrelax.zingmucsicplayer.Controller.UserController
-com/zingmucsicrelax/zingmucsicplayer/Controller/SetOnItemClick.java
- com.zingmucsicrelax.zingmucsicplayer.Controller.SetOnItemClick
-com/zingmucsicrelax/zingmucsicplayer/View/PlayList/DanhSachPlayListActivity.java
- com.zingmucsicrelax.zingmucsicplayer.View.PlayList.DanhSachPlayListActivity
- com.zingmucsicrelax.zingmucsicplayer.View.PlayList.DanhSachPlayListActivity$1
- com.zingmucsicrelax.zingmucsicplayer.View.PlayList.DanhSachPlayListActivity$2
- com.zingmucsicrelax.zingmucsicplayer.View.PlayList.DanhSachPlayListActivity$3
- com.zingmucsicrelax.zingmucsicplayer.View.PlayList.DanhSachPlayListActivity$4
- com.zingmucsicrelax.zingmucsicplayer.View.PlayList.DanhSachPlayListActivity$4$1
- com.zingmucsicrelax.zingmucsicplayer.View.PlayList.DanhSachPlayListActivity$4$2
- com.zingmucsicrelax.zingmucsicplayer.View.PlayList.DanhSachPlayListActivity$5
- com.zingmucsicrelax.zingmucsicplayer.View.PlayList.DanhSachPlayListActivity$6
- com.zingmucsicrelax.zingmucsicplayer.View.PlayList.DanhSachPlayListActivity$7
- com.zingmucsicrelax.zingmucsicplayer.View.PlayList.DanhSachPlayListActivity$8
+com/zingmucsicrelax/zingmucsicplayer/View/SearchActivity.java
+ com.zingmucsicrelax.zingmucsicplayer.View.SearchActivity
+ com.zingmucsicrelax.zingmucsicplayer.View.SearchActivity$1
+com/zingmucsicrelax/zingmucsicplayer/View/Account/DangNhapActivity.java
+ com.zingmucsicrelax.zingmucsicplayer.View.Account.DangNhapActivity
+com/zingmucsicrelax/zingmucsicplayer/Adapter/DanhSachSearchBaiHatAdapter.java
+ com.zingmucsicrelax.zingmucsicplayer.Adapter.DanhSachSearchBaiHatAdapter
+ com.zingmucsicrelax.zingmucsicplayer.Adapter.DanhSachSearchBaiHatAdapter$1
+ com.zingmucsicrelax.zingmucsicplayer.Adapter.DanhSachSearchBaiHatAdapter$ViewHodler
 com/zingmucsicrelax/zingmucsicplayer/View/PlayList/DanhSachBaiHatPlayListActivity.java
  com.zingmucsicrelax.zingmucsicplayer.View.PlayList.DanhSachBaiHatPlayListActivity
  com.zingmucsicrelax.zingmucsicplayer.View.PlayList.DanhSachBaiHatPlayListActivity$1
  com.zingmucsicrelax.zingmucsicplayer.View.PlayList.DanhSachBaiHatPlayListActivity$2
  com.zingmucsicrelax.zingmucsicplayer.View.PlayList.DanhSachBaiHatPlayListActivity$3
  com.zingmucsicrelax.zingmucsicplayer.View.PlayList.DanhSachBaiHatPlayListActivity$4
-com/zingmucsicrelax/zingmucsicplayer/View/Account/DangNhapActivity.java
- com.zingmucsicrelax.zingmucsicplayer.View.Account.DangNhapActivity
-com/zingmucsicrelax/zingmucsicplayer/Adapter/PagerAdapters.java
- com.zingmucsicrelax.zingmucsicplayer.Adapter.PagerAdapters
-com/zingmucsicrelax/zingmucsicplayer/View/Account/DangKyActivity.java
- com.zingmucsicrelax.zingmucsicplayer.View.Account.DangKyActivity
 com/zingmucsicrelax/zingmucsicplayer/View/HomeActivity.java
  com.zingmucsicrelax.zingmucsicplayer.View.HomeActivity
  com.zingmucsicrelax.zingmucsicplayer.View.HomeActivity$1
@@ -49,42 +32,22 @@ com/zingmucsicrelax/zingmucsicplayer/View/HomeActivity.java
  com.zingmucsicrelax.zingmucsicplayer.View.HomeActivity$5
  com.zingmucsicrelax.zingmucsicplayer.View.HomeActivity$6
  com.zingmucsicrelax.zingmucsicplayer.View.HomeActivity$7
-com/zingmucsicrelax/zingmucsicplayer/MainActivity.java
- com.zingmucsicrelax.zingmucsicplayer.MainActivity
- com.zingmucsicrelax.zingmucsicplayer.MainActivity$1
-com/zingmucsicrelax/zingmucsicplayer/View/SearchActivity.java
- com.zingmucsicrelax.zingmucsicplayer.View.SearchActivity
- com.zingmucsicrelax.zingmucsicplayer.View.SearchActivity$1
-com/zingmucsicrelax/zingmucsicplayer/Model/User.java
- com.zingmucsicrelax.zingmucsicplayer.Model.User
-com/zingmucsicrelax/zingmucsicplayer/Adapter/DanhSachBaiHatAdapter.java
- com.zingmucsicrelax.zingmucsicplayer.Adapter.DanhSachBaiHatAdapter
- com.zingmucsicrelax.zingmucsicplayer.Adapter.DanhSachBaiHatAdapter$1
- com.zingmucsicrelax.zingmucsicplayer.Adapter.DanhSachBaiHatAdapter$ViewHodler
-com/zingmucsicrelax/zingmucsicplayer/Adapter/DanhSachBaiHatPlayListAdapter.java
- com.zingmucsicrelax.zingmucsicplayer.Adapter.DanhSachBaiHatPlayListAdapter
- com.zingmucsicrelax.zingmucsicplayer.Adapter.DanhSachBaiHatPlayListAdapter$1
- com.zingmucsicrelax.zingmucsicplayer.Adapter.DanhSachBaiHatPlayListAdapter$ViewHodler
 com/zingmucsicrelax/zingmucsicplayer/Adapter/DanhSachBaiHatMoiAdapter.java
  com.zingmucsicrelax.zingmucsicplayer.Adapter.DanhSachBaiHatMoiAdapter
  com.zingmucsicrelax.zingmucsicplayer.Adapter.DanhSachBaiHatMoiAdapter$1
  com.zingmucsicrelax.zingmucsicplayer.Adapter.DanhSachBaiHatMoiAdapter$ViewHodler
-com/zingmucsicrelax/zingmucsicplayer/Controller/BaiHatController.java
- com.zingmucsicrelax.zingmucsicplayer.Controller.BaiHatController
-com/zingmucsicrelax/zingmucsicplayer/DAO/DB.java
- com.zingmucsicrelax.zingmucsicplayer.DAO.DB
-com/zingmucsicrelax/zingmucsicplayer/Adapter/DanhSachSearchBaiHatAdapter.java
- com.zingmucsicrelax.zingmucsicplayer.Adapter.DanhSachSearchBaiHatAdapter
- com.zingmucsicrelax.zingmucsicplayer.Adapter.DanhSachSearchBaiHatAdapter$1
- com.zingmucsicrelax.zingmucsicplayer.Adapter.DanhSachSearchBaiHatAdapter$ViewHodler
-com/zingmucsicrelax/zingmucsicplayer/Adapter/DanhSachBaiHatYeuThichAdapter.java
- com.zingmucsicrelax.zingmucsicplayer.Adapter.DanhSachBaiHatYeuThichAdapter
- com.zingmucsicrelax.zingmucsicplayer.Adapter.DanhSachBaiHatYeuThichAdapter$1
- com.zingmucsicrelax.zingmucsicplayer.Adapter.DanhSachBaiHatYeuThichAdapter$ViewHodler
-com/zingmucsicrelax/zingmucsicplayer/Model/Playlist.java
- com.zingmucsicrelax.zingmucsicplayer.Model.Playlist
+com/zingmucsicrelax/zingmucsicplayer/BuildConfig.java
+ com.zingmucsicrelax.zingmucsicplayer.BuildConfig
+com/zingmucsicrelax/zingmucsicplayer/Controller/UserController.java
+ com.zingmucsicrelax.zingmucsicplayer.Controller.UserController
+com/zingmucsicrelax/zingmucsicplayer/ShareConfig.java
+ com.zingmucsicrelax.zingmucsicplayer.ShareConfig
 com/zingmucsicrelax/zingmucsicplayer/View/FragMent/FragMent_Lyrics.java
  com.zingmucsicrelax.zingmucsicplayer.View.FragMent.FragMent_Lyrics
+com/zingmucsicrelax/zingmucsicplayer/View/Account/DangKyActivity.java
+ com.zingmucsicrelax.zingmucsicplayer.View.Account.DangKyActivity
+com/zingmucsicrelax/zingmucsicplayer/Controller/BaiHatController.java
+ com.zingmucsicrelax.zingmucsicplayer.Controller.BaiHatController
 com/zingmucsicrelax/zingmucsicplayer/View/FragMent/FragMent_Player.java
  com.zingmucsicrelax.zingmucsicplayer.View.FragMent.FragMent_Player
  com.zingmucsicrelax.zingmucsicplayer.View.FragMent.FragMent_Player$1
@@ -97,6 +60,43 @@ com/zingmucsicrelax/zingmucsicplayer/View/FragMent/FragMent_Player.java
  com.zingmucsicrelax.zingmucsicplayer.View.FragMent.FragMent_Player$7
  com.zingmucsicrelax.zingmucsicplayer.View.FragMent.FragMent_Player$8
  com.zingmucsicrelax.zingmucsicplayer.View.FragMent.FragMent_Player$9
+com/zingmucsicrelax/zingmucsicplayer/View/PlayList/DanhSachPlayListActivity.java
+ com.zingmucsicrelax.zingmucsicplayer.View.PlayList.DanhSachPlayListActivity
+ com.zingmucsicrelax.zingmucsicplayer.View.PlayList.DanhSachPlayListActivity$1
+ com.zingmucsicrelax.zingmucsicplayer.View.PlayList.DanhSachPlayListActivity$2
+ com.zingmucsicrelax.zingmucsicplayer.View.PlayList.DanhSachPlayListActivity$3
+ com.zingmucsicrelax.zingmucsicplayer.View.PlayList.DanhSachPlayListActivity$4
+ com.zingmucsicrelax.zingmucsicplayer.View.PlayList.DanhSachPlayListActivity$4$1
+ com.zingmucsicrelax.zingmucsicplayer.View.PlayList.DanhSachPlayListActivity$4$2
+ com.zingmucsicrelax.zingmucsicplayer.View.PlayList.DanhSachPlayListActivity$5
+ com.zingmucsicrelax.zingmucsicplayer.View.PlayList.DanhSachPlayListActivity$6
+ com.zingmucsicrelax.zingmucsicplayer.View.PlayList.DanhSachPlayListActivity$7
+ com.zingmucsicrelax.zingmucsicplayer.View.PlayList.DanhSachPlayListActivity$8
+com/zingmucsicrelax/zingmucsicplayer/Controller/SetOnItemClick.java
+ com.zingmucsicrelax.zingmucsicplayer.Controller.SetOnItemClick
+com/zingmucsicrelax/zingmucsicplayer/MainActivity.java
+ com.zingmucsicrelax.zingmucsicplayer.MainActivity
+ com.zingmucsicrelax.zingmucsicplayer.MainActivity$1
 com/zingmucsicrelax/zingmucsicplayer/View/Player/PlayMusicActivity.java
  com.zingmucsicrelax.zingmucsicplayer.View.Player.PlayMusicActivity
  com.zingmucsicrelax.zingmucsicplayer.View.Player.PlayMusicActivity$1
+com/zingmucsicrelax/zingmucsicplayer/Adapter/PagerAdapters.java
+ com.zingmucsicrelax.zingmucsicplayer.Adapter.PagerAdapters
+com/zingmucsicrelax/zingmucsicplayer/Adapter/DanhSachBaiHatYeuThichAdapter.java
+ com.zingmucsicrelax.zingmucsicplayer.Adapter.DanhSachBaiHatYeuThichAdapter
+ com.zingmucsicrelax.zingmucsicplayer.Adapter.DanhSachBaiHatYeuThichAdapter$1
+ com.zingmucsicrelax.zingmucsicplayer.Adapter.DanhSachBaiHatYeuThichAdapter$ViewHodler
+com/zingmucsicrelax/zingmucsicplayer/View/Love/DanhSachBaiHatYeuThichActivity.java
+ com.zingmucsicrelax.zingmucsicplayer.View.Love.DanhSachBaiHatYeuThichActivity
+ com.zingmucsicrelax.zingmucsicplayer.View.Love.DanhSachBaiHatYeuThichActivity$1
+ com.zingmucsicrelax.zingmucsicplayer.View.Love.DanhSachBaiHatYeuThichActivity$2
+ com.zingmucsicrelax.zingmucsicplayer.View.Love.DanhSachBaiHatYeuThichActivity$3
+ com.zingmucsicrelax.zingmucsicplayer.View.Love.DanhSachBaiHatYeuThichActivity$4
+com/zingmucsicrelax/zingmucsicplayer/Model/Playlist.java
+ com.zingmucsicrelax.zingmucsicplayer.Model.Playlist
+com/zingmucsicrelax/zingmucsicplayer/Model/BaiHat.java
+ com.zingmucsicrelax.zingmucsicplayer.Model.BaiHat
+com/zingmucsicrelax/zingmucsicplayer/DAO/DB.java
+ com.zingmucsicrelax.zingmucsicplayer.DAO.DB
+com/zingmucsicrelax/zingmucsicplayer/Model/User.java
+ com.zingmucsicrelax.zingmucsicplayer.Model.User

@@ -13,7 +13,7 @@ public class DB {
 
     public  static Connection getConnection(){
        Connection connection =null;
-       String Url="jdbc:mysql://192.168.1.4/ZingMusicPlayer";
+       String Url="jdbc:mysql://192.168.1.8/ZingMusicPlayer";
        String username="root";
        String password="123456789";
 

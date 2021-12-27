@@ -83,6 +83,8 @@ public class FragMent_Player  extends Fragment {
             arrayList = baiHatController.getDataListBaiHatYeuThich(shareConfig.getUserID());
         }else if(PlayMusicActivity.type ==3){
             arrayList = baiHatController.getDataListBaiHatPlayList(shareConfig.getUserID(),baiHat.getId_playlist());
+        }else if(PlayMusicActivity.type ==4){
+            arrayList = baiHatController.getDataBaihatmoi();
         }
 
 

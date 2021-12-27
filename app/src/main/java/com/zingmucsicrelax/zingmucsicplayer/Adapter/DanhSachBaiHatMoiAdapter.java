@@ -75,6 +75,7 @@ public class DanhSachBaiHatMoiAdapter  extends RecyclerView.Adapter<DanhSachBaiH
             public void SetOnItemClickListener(View view, int pos) {
                 Intent intent = new Intent(context, PlayMusicActivity.class);
                 intent.putExtra("BH",arrayList.get(pos));
+                intent.putExtra("type",4);
                 context.startActivity(intent);
 
             }

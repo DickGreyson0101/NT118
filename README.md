@@ -30,7 +30,7 @@
 <a name="thanhvien"></a>
 | STT    | MSSV          | Họ và Tên              | Github                                                  | Email                   |
 | ------ |:-------------:| ----------------------:|--------------------------------------------------------:|-------------------------:
-| 1      |               | Võ Thành Đô            |                                                         |                         |
+| 1      | 19521365      | Võ Thành Đô            |                                                         |19521365@gm.uit.edu.vn   |
 | 2      |               | Võ Quốc Đăng           |                                                         |                         |
 | 3      | 19522154      | Nguyễn Văn Tài         |[nguyentai090301](https://github.com/nguyentai090301)    |19522154@gm.uit.edu.vn   |
 | 4      |               | Nguyễn Quốc Viễn       |                                                         |                         |
